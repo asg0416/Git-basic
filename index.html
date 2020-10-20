@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1> Git 코드 정리 </h1>
+    <h3>add 는 임시저장, commit은 완전 저장</h3>
+
+    <h4>로컬편</h4>
+    <ul>
+        <li>다루고 싶은 폴더로가서 git init을 한다(주의사항: master표시 보이면ㄴㄴ, clone했을때도 하지말자 자동으로 댐</li>
+        <li>실수로 만들었따 =>ls -al로 확인하고 rm -rf .git (remove r은 폴더지울때 쓰는거, f는 강제로 다 지우는거)</li>
+        <li>git status로 항상 상태 확인, 습관적으로</li>
+        <li>git add . // git add 파일이름 </li>
+        <li>git status</li>
+        <li>git commit -m "오늘 여기(뭐까지)했따"</li>
+        <li>add , commit 이런거 반복</li>
+
+    </ul>
+
+    <h4>협업편 - remote</h4>
+    <ul>
+        <li>git remote add 이름(origin) 저장소주소.git : 깃허브랑 연결</li>
+        <li>git remote -v : 저장소 이름, 저장소 주소 화가인</li>
+        <li>git push (-u: 디폴트 설정해놓기) origin(목적지 이름) master(우리 현재일하는곳) </li>
+        <li>만약 reject 및 빨간 글씨 뜬다. </li>
+        <li>git pull origin master</li>
+        <li>pull(다른사람이 한거있으면반영하고 시작하자) </li>
+        <li>add, commit(일하는중) push(업로드), pull(그새 누가 작업했나?)</li>
+    </ul>
+
+    <h4>협업편 - clone(제일 처음 레포만든 사람빼고 나머지)</h4>
+    <ul>
+        <li>git clone 주소.git</li>
+        <li> git init 하지말자. git remote로 확인해보면 연결되어있음ㅇ</li>
+        <li>add, commit 일하는중,..</li>
+        <li>push(업로드), pull(똉겨오기) </li>
+    </ul>
+
+    <h1>git push -f 쓰지말자. 절대로</h1>
+</body>
+
+</html>
